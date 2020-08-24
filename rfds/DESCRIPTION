@@ -1,0 +1,10 @@
+Package: rfds
+Type: Package
+Title: Interaction learning(Title Case)
+Version: 0.1.0
+Author: Jingya Wang
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Using book - R for Data Science
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
