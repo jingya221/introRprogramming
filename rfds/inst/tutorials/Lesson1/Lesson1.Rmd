@@ -1,0 +1,100 @@
+---
+title: "Lesson1"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(dslabs)
+library(dplyr)
+```
+
+
+## Part 1 
+
+### Installation of R, RStudio and R packages
+
+```{r question1, echo=FALSE}
+quiz(  
+  question("We can use https://cloud.r-project.org to download R.",
+    answer("TRUE", correct=TRUE),
+    answer("FALSE")
+  ),
+  question("We can use http://www.rstudio.com/download to download RStudio.",
+    answer("TURE", correct=TRUE),
+    answer("FALSE")
+  ),
+  question("Which of the following code using to install packages into R will cause an error?",
+    answer("install.packages(\"tidyverse\")"),
+    answer("install.packages(tidyverse)", correct = T),
+    answer("install.packages(c(\"gapminder\", \"readr\", \"broom\"))"),
+    answer("install.packages(\'tidyverse\')")
+  )
+)
+```
+
+## Part 2
+
+### Running R Code 
+
+Lets have a try:
+
+```{r code, exercise=TRUE}
+1 + 2
+1 / 3
+3 * 4
+sum(3, 4)
+```
+
+### Getting help from R
+
+*mtcars* is a dataset provided by R.
+
+```{r}
+data(mtcars)
+head(mtcars) #returning the first 6 rows
+```
+
+Suppose you want to kown more about what each column in this dataset present, what should you do?
+```{r help, exercise=TRUE}
+#type your code here
+```
+
+<div id="help-hint">
+**Hint:** You may use the help function in R.
+</div>
+
+## Part 3
+
+### Introduction of a public health data: Contagious disease data for US states
+
+#### Usage
+```{r}
+#dataset stored in dslabs package, remember to install the package when using on your own RStudio
+#install.packages("dslabs")
+#library(dslabs)
+data(us_contagious_diseases)
+```
+
+```{r datahelp, exercise=TRUE}
+#if you need more information using
+?us_contagious_diseases
+```
+
+#### Overview the dataset
+```{r overview}
+head(us_contagious_diseases)
+glimpse(us_contagious_diseases) #function in dplyr package
+```
+
+```{r question2, echo=FALSE}
+question("How many variables are in this dataset ?",
+  answer("6", correct = TRUE),
+  answer("16,065"),
+  incorrect = "Incorrect. There are 6 variables and 16,065 observations in this dataset.")
+
+```
+
+
