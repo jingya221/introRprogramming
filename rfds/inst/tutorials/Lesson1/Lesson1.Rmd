@@ -17,7 +17,7 @@ library(dplyr)
 ### Installation of R, RStudio and R packages
 
 ```{r question1, echo=FALSE}
-quiz(  
+quiz( caption = "Exercise", 
   question("We can use https://cloud.r-project.org to download R.",
     answer("TRUE", correct=TRUE),
     answer("FALSE")
@@ -52,7 +52,7 @@ sum(3, 4)
 
 *mtcars* is a dataset provided by R.
 
-```{r}
+```{r, echo=TRUE}
 data(mtcars)
 head(mtcars) #returning the first 6 rows
 ```
@@ -71,7 +71,7 @@ Suppose you want to kown more about what each column in this dataset present, wh
 ### Introduction of a public health data: Contagious disease data for US states
 
 #### Usage
-```{r}
+```{r, echo=TRUE}
 #dataset stored in dslabs package, remember to install the package when using on your own RStudio
 #install.packages("dslabs")
 #library(dslabs)
@@ -84,7 +84,7 @@ data(us_contagious_diseases)
 ```
 
 #### Overview the dataset
-```{r overview}
+```{r overview, echo=TRUE}
 head(us_contagious_diseases)
 glimpse(us_contagious_diseases) #function in dplyr package
 ```
