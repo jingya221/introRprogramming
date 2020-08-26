@@ -57,14 +57,21 @@ data(mtcars)
 head(mtcars) #returning the first 6 rows
 ```
 
-Suppose you want to kown more about what each column in this dataset present, what should you do?
+You can use help function in R to get the column information of this dataset.
 ```{r help, exercise=TRUE}
 #type your code here
 ```
 
 <div id="help-hint">
-**Hint:** You may use the help function in R.
+**Hint:** ?mtcars or help(mtcars)
 </div>
+
+Also, it's easy to check how a function can be used using help function.
+```{r help2, exercise=TRUE}
+?head
+help(head)
+```
+
 
 ## Part 3
 
