@@ -1,0 +1,104 @@
+---
+title: "Lesson3"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Part 1: Basic
+
+### Exercise 
+
+1. Compute $\sqrt{(380 + 175 / 1.25)^2*36}$. Answer following question.
+
+```{r com1, exercise=TRUE}
+#type your code here
+```
+
+```{r com1q, echo=FALSE}
+question("What is your calculated value?",
+  answer("3120", correct = TRUE),
+  answer("5840")
+  )
+```
+
+2. Variable x is already created in the environment. Please using seq() create a set of number as 3, 5, 7, 9 and store as variable y. Calculate x+y. Answer following question.
+
+```{r com2, exercise=TRUE}
+x <- c(1, 2)
+#type your code here
+
+```
+
+```{r com2q, echo=FALSE}
+question("What is your calculated value?",
+  answer("4 7 8 11", correct = TRUE),
+  answer("5 6 9 11"),
+  incorrect = "Incorrect. y<-seq(3, 9, by=2)")
+
+```
+
+
+## Part 2: Scripts
+
+```{r question, echo=FALSE}
+quiz( caption = "Exercise", 
+  question("1. Which methods can create a R script file?",
+    answer("File > New File > R script", correct=TRUE),
+    answer("Ctrl + Shift + N", correct=TRUE), 
+    incorrect = "Both are true"
+  ),
+  question("2. Which methods can run the code",
+    answer("Run botton", correct=TRUE),
+    answer("Cmd/Ctrl + Enter", correct=TRUE)
+  ),
+  question("3. Which of the following code will cause an error?",
+    answer("x <- 10"),
+    answer("xy <- 10"),
+    answer("this_is_a_long_name <- 10"),
+    answer("3 == NA", correct = T)
+  )
+)
+```
+
+## Part 3: Projects
+
+```{r question2, echo=FALSE}
+quiz( caption = "Exercise", 
+  question("Which code can used to print your current working directory in R?",
+    answer("getwd()", correct=TRUE),
+    answer("setwd()"), 
+    answer("cd()")
+  ),
+  question("Which is of the following is correct ",
+    answer("Run botton", correct=TRUE),
+    answer("Cmd/Ctrl + Enter", correct=TRUE)
+  )
+)
+```  
+
+Based on the following code we use to create a project in class:
+```{r project, eval=FALSE, echo=T}
+library(tidyverse)
+
+ggplot(diamonds, aes(carat, price)) + 
+  geom_hex()
+ggsave("diamonds.pdf")
+
+write_csv(diamonds, "diamonds.csv")
+```
+
+
+```{r question3, echo=FALSE} 
+  question("Which of the following file will not in your project folder?",
+    answer("diamonds.csv"),
+    answer("diamonds.pdf"),
+    answer("diamonds.R"),
+    answer("diamonds.RData", correct = T)
+  )
+```
