@@ -1,0 +1,124 @@
+---
+title: "Lesson4"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(dslabs)
+library(dplyr)
+library(tidyverse)
+library(nycflights13)
+```
+
+
+## Part 1 
+
+### Filter rows with filter()
+Use *flights* data from the *nycglights13* package.
+```{r, echo = TRUE}
+data(flights)
+head(flights)
+```
+Complete the code to select all flights on December 1st and save as *dec1*.
+```{r filter1, exercise = TRUE}
+dec1 <- filter(flights,     ,     )
+dec1
+```
+The following code finds all flights that departed in November or December. Rewrite it using *%in%*.
+```{r filter2, exercise = TRUE}
+nov_dec <- filter(flights, month == 11 | month == 12)
+nov_dec
+```
+Use the contagious disease data for US states for the following question.
+```{r, echo = TRUE}
+data(us_contagious_diseases)
+```
+Write a code to select all diseases counts in Year 2000 and save it as *yr2000*
+```{r filter3, exercise = TRUE}
+```
+
+### Arrange rows with arrange()
+Use *flights* for the following question.      
+Complete the code to re-order *dep_delay* in ascending order.
+```{r arrange1, exercise = TRUE}
+arrange(    ,     )
+```
+Use *us_contagious_diseases* data for the following question.     
+Sort *us_contagious_diseases* to find the disease with the most yearly counts among all years. (Hint: you may want to re-order *count*.)
+```{r arrange2, exercise = TRUE}
+```
+
+
+## Part 2
+
+### Select columns with select()
+Use *flights* for the following question.      
+Complete the code to select all columns, except those from year to day. (inclusive)
+```{r select1, exercise = TRUE}
+select(flights,      )
+```
+
+### Add new variables with mutate()
+Use *flights* for the following question.      
+Complete the code to add *gain* (difference between dep_delay and arr_delay), *hours* (hours sepnt in the air), and *gain_per_hour*.
+```{r mutate, exercise = TRUE}
+flights_sml <- select(flights, year:day, ends_with("delay"), distance, air_time)
+mutate(flights_sml,
+  gain =    ,
+  hours =     ,
+  gain_per_hour =     
+)
+```
+
+## Part 3
+
+### Grouped summaries with summarise()
+Use *flights* for the following questions.    
+Complete the code to group *flights* by date (year, month, day), and get the average delay per date.
+```{r sum1, exercise = TRUE}
+by_day <- group_by(   ,   ,    ,    )
+summarise(by_day, delay =     )
+```
+Using %>% to rewrite the code.
+```{r pipe, exercise = TRUE}
+by_dest <- group_by(flights, dest)
+delay <- summarise(by_dest,
+  count = n(),
+  dist = mean(distance, na.rm = TRUE),
+  delay = mean(arr_delay, na.rm = TRUE)
+)
+delay <- filter(delay, count > 20, dest != "HNL")
+```
+Complete the code below to find the first and last departure for each day. (after removing cancelled flights)
+```{r group1, exercise = TRUE}
+not_cancelled <- flights %>% 
+  filter(!is.na(dep_delay), !is.na(arr_delay))
+not_cancelled %>% 
+  group_by(     ) %>% 
+  summarise(
+    first_dep =    , 
+    last_dep =     
+  )
+```
+Complete the code to find out which destinations have the most carriers.
+```{r group2, exercise = TRUE}
+not_cancelled %>% 
+  group_by(    ) %>% 
+  summarise(carriers =      ) %>% 
+  arrange(     )
+```
+Use *us_contagious_disease* for the following question.     
+Write a code to find out the total counts of each disease for each year.
+```{r group3, exercise = TRUE}
+```
+
+
+
+
+
+
+
+
