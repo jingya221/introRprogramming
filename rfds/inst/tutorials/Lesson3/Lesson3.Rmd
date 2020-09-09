@@ -60,6 +60,7 @@ question("This code will cause an error",
 #### 4. Correct the following R commands so that they can run correctly.(3 mistakes)
 
 ```{r comp4, exercise=T}
+library(tidyverse)
 data(mpg)
 data(diamonds)
 
