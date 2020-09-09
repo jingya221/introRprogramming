@@ -7,7 +7,6 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
-library("tidyverse")
 ```
 
 
@@ -17,11 +16,11 @@ library("tidyverse")
 
 #### 1. Compute $\sqrt{(380 + 175 / 1.25)^2*36}$. Answer following question.
 
-```{r com1, exercise=TRUE}
+```{r comp1, exercise=TRUE}
 #type your code here
 ```
 
-```{r com1q, echo=FALSE}
+```{r ques1, echo=FALSE}
 question("What is your calculated value?",
   answer("3120", correct = TRUE),
   answer("5840")
@@ -30,13 +29,13 @@ question("What is your calculated value?",
 
 #### 2. Variable x is already created in the environment. Please using seq() create a set of number as 3, 5, 7, 9 and store as variable y. Calculate x+y. Answer following question.
 
-```{r com2, exercise=TRUE}
+```{r comp2, exercise=TRUE}
 x <- c(1, 2)
 #type your code here
 
 ```
 
-```{r com2q, echo=FALSE}
+```{r ques2, echo=FALSE}
 question("What is your calculated value?",
   answer("4 7 8 11", correct = TRUE),
   answer("5 6 9 11"),
@@ -45,12 +44,12 @@ question("What is your calculated value?",
 ```
 
 #### 3. Take a look at the following code.
-```{r com3, eval=FALSE, echo=T}
+```{r comp3, eval=FALSE, echo=T}
 my_variable <- 10
 my_varlable
 ```
 
-```{r com3q, echo=FALSE}
+```{r ques3, echo=FALSE}
 question("This code will cause an error",
   answer("True", correct = TRUE),
   answer("False"),
@@ -60,7 +59,7 @@ question("This code will cause an error",
 
 #### 4. Correct the following R commands so that they can run correctly.(3 mistakes)
 
-```{r com4, exercise=T}
+```{r comp4, exercise=T}
 data(mpg)
 data(diamonds)
 
@@ -75,7 +74,7 @@ filter(diamond, carat > 3)
 
 ## Part 2: Scripts
 
-```{r question, echo=FALSE}
+```{r ex2, echo=FALSE}
 quiz( caption = "Exercise", 
   question("Which methods can create a R script file?",
     answer("File > New File > R script", correct=TRUE),
@@ -97,7 +96,7 @@ quiz( caption = "Exercise",
 
 ## Part 3: Projects
 
-```{r question2, echo=FALSE}
+```{r ex3, echo=FALSE}
 quiz( caption = "Exercise", 
   question("Which code can used to print your current working directory in R?",
     answer("getwd()", correct=TRUE),
@@ -123,7 +122,7 @@ write_csv(diamonds, "diamonds.csv")
 ```
 
 
-```{r question3, echo=FALSE} 
+```{r ex4, echo=FALSE} 
   question("Which of the following file will not in your project folder?",
     answer("diamonds.csv"),
     answer("diamonds.pdf"),
