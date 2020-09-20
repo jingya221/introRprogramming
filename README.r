@@ -18,3 +18,9 @@ learnr::run_tutorial("Lesson3", package = "rfds")
 
 ##lesson4
 learnr::run_tutorial("Lesson4", package = "rfds")
+
+##lesson5
+learnr::run_tutorial("Lesson5", package = "rfds")
+
+##lesson6
+learnr::run_tutorial("Lesson6", package = "rfds")
