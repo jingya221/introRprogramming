@@ -13,7 +13,7 @@
 <meta name="progressive" content="false" />
 <meta name="allow-skip" content="false" />
 
-<title>Lesson3</title>
+<title>Lesson6</title>
 
 
 <!-- highlightjs -->
@@ -116,186 +116,95 @@ $(document).ready(function () {
 
 <div class="topics">
 
-<div id="section-part-1-basic" class="section level2">
-<h2>Part 1: Basic</h2>
-<div id="section-exercise" class="section level3">
-<h3>Exercise</h3>
-<div id="section-compute-sqrt380-175-1.25236.-answer-following-question." class="section level4">
-<h4>1. Compute <span class="math inline">\(\sqrt{(380 + 175 / 1.25)^2*36}\)</span>. Answer following question.</h4>
-<div class="tutorial-exercise" data-label="comp1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>#type your code here</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
-</div>
+<div id="section-part-1" class="section level2">
+<h2>Part 1</h2>
+<div id="section-creating-tibbles" class="section level3">
+<h3>Creating tibbles</h3>
 <div class="panel panel-default">
-<div data-label="ques1" class="tutorial-question panel-body">
-<div id="ques1-answer_container" class="shiny-html-output"></div>
-<div id="ques1-message_container" class="shiny-html-output"></div>
-<div id="ques1-action_button_container" class="shiny-html-output"></div>
+<div data-label="q1" class="tutorial-question panel-body">
+<div id="q1-answer_container" class="shiny-html-output"></div>
+<div id="q1-message_container" class="shiny-html-output"></div>
+<div id="q1-action_button_container" class="shiny-html-output"></div>
 <script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
 </div>
-</div>
-<div id="section-variable-x-is-already-created-in-the-environment.-please-using-seq-create-a-set-of-number-as-3-5-7-9-and-store-as-variable-y.-calculate-xy.-answer-following-question." class="section level4">
-<h4>2. Variable x is already created in the environment. Please using seq() create a set of number as 3, 5, 7, 9 and store as variable y. Calculate x+y. Answer following question.</h4>
-<div class="tutorial-exercise" data-label="comp2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>x &lt;- c(1, 2)
-#type your code here</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
-</div>
-<div class="panel panel-default">
-<div data-label="ques2" class="tutorial-question panel-body">
-<div id="ques2-answer_container" class="shiny-html-output"></div>
-<div id="ques2-message_container" class="shiny-html-output"></div>
-<div id="ques2-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
-</div>
-</div>
-</div>
-<div id="section-take-a-look-at-the-following-code." class="section level4">
-<h4>3. Take a look at the following code.</h4>
-<pre class="r"><code>my_variable &lt;- 10
-my_varlable</code></pre>
-<div class="panel panel-default">
-<div data-label="ques3" class="tutorial-question panel-body">
-<div id="ques3-answer_container" class="shiny-html-output"></div>
-<div id="ques3-message_container" class="shiny-html-output"></div>
-<div id="ques3-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
-</div>
-</div>
-</div>
-<div id="section-correct-the-following-r-commands-so-that-they-can-run-correctly.3-mistakes" class="section level4">
-<h4>4. Correct the following R commands so that they can run correctly.(3 mistakes)</h4>
-<div class="tutorial-exercise" data-label="comp4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>library(tidyverse)
-data(mpg)
-data(diamonds)
-
-ggplot(dota = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy))
-
-fliter(mpg, cyl == 8)
-filter(diamond, carat &gt; 3)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
-</div>
-</div>
-</div>
-</div>
-<div id="section-part-2-scripts" class="section level2">
-<h2>Part 2: Scripts</h2>
-<p><div class="panel-heading tutorial-quiz-title">Exercise</div><div class="panel panel-default">
-<div data-label="ex2-1" class="tutorial-question panel-body">
-<div id="ex2-1-answer_container" class="shiny-html-output"></div>
-<div id="ex2-1-message_container" class="shiny-html-output"></div>
-<div id="ex2-1-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
-</div>
-</div><div class="panel panel-default">
-<div data-label="ex2-2" class="tutorial-question panel-body">
-<div id="ex2-2-answer_container" class="shiny-html-output"></div>
-<div id="ex2-2-message_container" class="shiny-html-output"></div>
-<div id="ex2-2-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
-</div>
-</div><div class="panel panel-default">
-<div data-label="ex2-3" class="tutorial-question panel-body">
-<div id="ex2-3-answer_container" class="shiny-html-output"></div>
-<div id="ex2-3-message_container" class="shiny-html-output"></div>
-<div id="ex2-3-action_button_container" class="shiny-html-output"></div>
+<p>tb &lt;- tibble(<br />
+:) = “smile”,<br />
+2000 = “number”<br />
+) <div class="panel panel-default">
+<div data-label="q2" class="tutorial-question panel-body">
+<div id="q2-answer_container" class="shiny-html-output"></div>
+<div id="q2-message_container" class="shiny-html-output"></div>
+<div id="q2-action_button_container" class="shiny-html-output"></div>
 <script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
 </div></p>
+Create a tibble with x from 1 to 10, y = 2*x, and z = (x+y)^2.
+<div class="tutorial-exercise" data-label="tibble1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
-<div id="section-part-3-projects" class="section level2">
-<h2>Part 3: Projects</h2>
-<p><div class="panel-heading tutorial-quiz-title">Exercise</div><div class="panel panel-default">
-<div data-label="ex3-1" class="tutorial-question panel-body">
-<div id="ex3-1-answer_container" class="shiny-html-output"></div>
-<div id="ex3-1-message_container" class="shiny-html-output"></div>
-<div id="ex3-1-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+<pre class="r"><code># A tibble: 3 x 3
+#  a         b     c
+#  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+#  x         7   5.5
+#  y         8   9.7
+#  z         9  10.8</code></pre>
+Write a code to create a tibble with above results.
+<div class="tutorial-exercise" data-label="tibble2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
-</div><div class="panel panel-default">
-<div data-label="ex3-2" class="tutorial-question panel-body">
-<div id="ex3-2-answer_container" class="shiny-html-output"></div>
-<div id="ex3-2-message_container" class="shiny-html-output"></div>
-<div id="ex3-2-action_button_container" class="shiny-html-output"></div>
-<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
-</div></p>
-<div id="section-based-on-the-following-code-we-use-to-create-a-project-in-class" class="section level4">
-<h4>Based on the following code we use to create a project in class:</h4>
-<pre class="r"><code>library(tidyverse)
-
-ggplot(diamonds, aes(carat, price)) + 
-  geom_hex()
-ggsave(&quot;diamonds.pdf&quot;)
-
-write_csv(diamonds, &quot;diamonds.csv&quot;)</code></pre>
+</div>
+<div id="section-part-2" class="section level2">
+<h2>Part 2</h2>
+<div id="section-printing" class="section level3">
+<h3>Printing</h3>
+<pre class="r"><code>nycflights13::flights %&gt;% 
+  print(n = 10, width = Inf)</code></pre>
 <div class="panel panel-default">
-<div data-label="ex4" class="tutorial-question panel-body">
-<div id="ex4-answer_container" class="shiny-html-output"></div>
-<div id="ex4-message_container" class="shiny-html-output"></div>
-<div id="ex4-action_button_container" class="shiny-html-output"></div>
+<div data-label="q3" class="tutorial-question panel-body">
+<div id="q3-answer_container" class="shiny-html-output"></div>
+<div id="q3-message_container" class="shiny-html-output"></div>
+<div id="q3-action_button_container" class="shiny-html-output"></div>
 <script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
 </div>
+<pre class="r"><code>options(tibble.print_max = n, tibble.print_min = m)</code></pre>
+<div class="panel panel-default">
+<div data-label="q4" class="tutorial-question panel-body">
+<div id="q4-answer_container" class="shiny-html-output"></div>
+<div id="q4-message_container" class="shiny-html-output"></div>
+<div id="q4-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
 </div>
-<div id="section-part-4extra" class="section level2">
-<h2>Part 4:Extra</h2>
-<div id="section-example3-on-slides" class="section level3">
-<h3>Example3 on slides</h3>
-<pre class="r"><code>library(dslabs)
-data(us_contagious_diseases)
-#create the function
-sumcases_year_state &lt;- function(dataset, years, states){
-     dataset %&gt;%
-       filter(year == years, state == states) %&gt;%
-       summarize(type = n(), total = sum(count))
-}</code></pre>
-</div>
-<div id="section-practice" class="section level3">
-<h3>Practice</h3>
-<div id="section-try-to-use-the-function-created-above.-suppose-you-want-to-know-the-total-case-number-and-number-of-disease-kind-in-1983-in-new-jersey." class="section level4">
-<h4>Try to use the function created above. Suppose you want to know the total case number and number of disease kind in 1983 in New Jersey.</h4>
-<div class="tutorial-exercise" data-label="func1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>sumcases_year_state( #insert your code here
-  )</code></pre>
+Use <em>flights</em> for the following question.<br />
+Write a code to print 8 rows and all columns of <em>flights</em>.
+<div class="tutorial-exercise" data-label="print" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
 </div>
-<div id="section-create-a-function" class="section level3">
-<h3>Create a function</h3>
-<div id="section-suppose-you-want-to-create-a-function-to-find-the-state-which-has-the-highest-cases-of-a-specific-disease-in-a-specific-year." class="section level4">
-<h4>Suppose you want to create a function to find the State which has the highest cases of a specific disease in a specific year.</h4>
-</div>
-<div id="section-test-for-your-function.-find-the-state-has-the-highest-cases-of-hepatitis-a-in-1980." class="section level4">
-<h4>Test for your function. Find the State has the highest cases of Hepatitis A in 1980.</h4>
-<div class="tutorial-exercise" data-label="func2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>mincaseState_year_disease &lt;- function(dataset, years, diseases){
-  dataset %&gt;%
-    #insert your code here
-}
-
-mincaseState_year_disease(us_contagious_diseases,  ,    )</code></pre>
+<div id="section-part-3" class="section level2">
+<h2>Part 3</h2>
+<div id="section-subsetting" class="section level3">
+<h3>Subsetting</h3>
+Use <em>us_contagious_disease</em> for the following question.<br />
+Write a code to extract <em>disease</em> from the dataset.
+<div class="tutorial-exercise" data-label="subset1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
-<div id="section-func2-hint">
-<p><strong>Hint:</strong> use top_n(1, count) after filter()</p>
+Write a code to extract the third variable in the dataset.
+<div class="tutorial-exercise" data-label="subset2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
-</div>
-<div id="section-test-for-your-function.-find-the-state-has-the-highest-cases-of-hepatitis-a-in-1980.-1" class="section level4">
-<h4>Test for your function. Find the State has the highest cases of Hepatitis A in 1980.</h4>
-</div>
-<div id="section-the-correct-state-should-be-california." class="section level4">
-<h4>The correct State should be California.</h4>
 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
+library(dslabs)
 library(dplyr)
+library(tidyverse)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -309,73 +218,53 @@ session$onSessionEnded(function() {
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-comp1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-comp1-code-editor`)), session)
-output$`tutorial-exercise-comp1-output` <- renderUI({
-  `tutorial-exercise-comp1-result`()
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "q1", question = structure("Which is the correct way to coerce data frame iris to a tibble?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_ab6a7a9",     option = "tibble(iris)", value = "tibble(iris)", label = structure("tibble(iris)", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cf346da",     option = "as_tibble(iris)", value = "as_tibble(iris)", label = structure("as_tibble(iris)", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d00385c",     option = "tribble(iris)", value = "tribble(iris)", label = structure("tribble(iris)", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect, you should use as_tibble() to coerce a data frame to a tibble.", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect, you should use as_tibble() to coerce a data frame to a tibble.", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "q1-answer", question = "q1"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich is the correct way to coerce data frame iris to a tibble?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1237555862.42372, options = list()), class = c("learnr_radio", "tutorial_question")))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "q2", question = structure("When you run the code above, will it cause an error?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_3465e18",     option = "Yes", value = "Yes", label = structure("Yes", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cc72cef",     option = "No", value = "No", label = structure("No", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect, for a tibble to have non-syntactic variable names, you need to surround them with backticks, `.", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect, for a tibble to have non-syntactic variable names, you need to surround them with backticks, `.", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "q2-answer", question = "q2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhen you run the code above, will it cause an error?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 561497537.738532, options = list()), class = c("learnr_radio", "tutorial_question")))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-tibble1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-tibble1-code-editor`)), session)
+output$`tutorial-exercise-tibble1-output` <- renderUI({
+  `tutorial-exercise-tibble1-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques1", question = structure("What is your calculated value?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_f045c98",     option = "3120", value = "3120", label = structure("3120", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7921952",     option = "5840", value = "5840", label = structure("5840", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ques1-answer", question = "ques1"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat is your calculated value?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 2091563207.52604, options = list()), class = c("learnr_radio", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-comp2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-comp2-code-editor`)), session)
-output$`tutorial-exercise-comp2-output` <- renderUI({
-  `tutorial-exercise-comp2-result`()
+`tutorial-exercise-tibble2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-tibble2-code-editor`)), session)
+output$`tutorial-exercise-tibble2-output` <- renderUI({
+  `tutorial-exercise-tibble2-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques2", question = structure("What is your calculated value?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_30afad9",     option = "4 7 8 11", value = "4 7 8 11", label = structure("4 7 8 11", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8ce5737",     option = "5 6 9 11", value = "5 6 9 11", label = structure("5 6 9 11", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect. y&lt;-seq(3, 9, by=2)", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect. y&lt;-seq(3, 9, by=2)", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ques2-answer", question = "ques2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat is your calculated value?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1529101239.78796, options = list()), class = c("learnr_radio", "tutorial_question")))
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "q3", question = structure("How many rows and columns will the above code print?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_b751a79",     option = "10 rows and 10 columns", value = "10 rows and 10 columns",     label = structure("10 rows and 10 columns", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4df6160",     option = "10 rows and all coloumns", value = "10 rows and all coloumns",     label = structure("10 rows and all coloumns", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_da30df1",     option = "all rows and 10 columns", value = "all rows and 10 columns",     label = structure("all rows and 10 columns", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_21cee05",     option = "all rows and all columns", value = "all rows and all columns",     label = structure("all rows and all columns", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect, it will print 10 rows and all columns.", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect, it will print 10 rows and all columns.", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "q3-answer", question = "q3"), loading = structure("<strong>Loading:<\u002fstrong> \nHow many rows and columns will the above code print?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1348752338.87194, options = list()), class = c("learnr_radio", "tutorial_question")))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques3", question = structure("This code will cause an error", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_2fced24",     option = "True", value = "True", label = structure("True", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f6d143d",     option = "False", value = "False", label = structure("False", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect. Take a carefull look at what behind the &quot;my_var&quot; ", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect. Take a carefull look at what behind the &quot;my_var&quot; ", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ques3-answer", question = "ques3"), loading = structure("<strong>Loading:<\u002fstrong> \nThis code will cause an error\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 17579843.4918137, options = list()), class = c("learnr_radio", "tutorial_question")))
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "q4", question = structure("What will the above code do?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_8ed0333",     option = "If more than n rows, print only m rows", value = "If more than n rows, print only m rows",     label = structure("If more than n rows, print only m rows", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cf2877d",     option = "If more than m rows, print only n rows", value = "If more than m rows, print only n rows",     label = structure("If more than m rows, print only n rows", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9e6d529",     option = "If more than n columns, print only m columns",     value = "If more than n columns, print only m columns", label = structure("If more than n columns, print only m columns", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1abbe49",     option = "If more than m columns, print only n columns",     value = "If more than m columns, print only n columns", label = structure("If more than m columns, print only n columns", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect, if more than n rows, it will print only m rows.", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect, if more than n rows, it will print only m rows.", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "q4-answer", question = "q4"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat will the above code do?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1223934336.43006, options = list()), class = c("learnr_radio", "tutorial_question")))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-comp4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-comp4-code-editor`)), session)
-output$`tutorial-exercise-comp4-output` <- renderUI({
-  `tutorial-exercise-comp4-result`()
+`tutorial-exercise-print-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-print-code-editor`)), session)
+output$`tutorial-exercise-print-output` <- renderUI({
+  `tutorial-exercise-print-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", label = "ex2-1", question = structure("Which methods can create a R script file?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_7785e7a",     option = "File > New File > R script", value = "File > New File > R script",     label = structure("File &gt; New File &gt; R script", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b550133",     option = "Ctrl + Shift + N", value = "Ctrl + Shift + N",     label = structure("Ctrl + Shift + N", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Both are true", html = TRUE, class = c("html", "character")), incorrect = structure("Both are true", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex2-1-answer", question = "ex2-1"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich methods can create a R script file?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 707214297.670678, options = list()), class = c("learnr_checkbox", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", label = "ex2-2", question = structure("Which methods can run the code", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_4a8190a",     option = "Run botton", value = "Run botton", label = structure("Run botton", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_972cf37",     option = "Cmd/Ctrl + Enter", value = "Cmd/Ctrl + Enter",     label = structure("Cmd/Ctrl + Enter", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex2-2-answer", question = "ex2-2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich methods can run the code\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 121688943.443334, options = list()), class = c("learnr_checkbox", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ex2-3", question = structure("Which of the following code will cause an error?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_ea86ff2",     option = "x <- 10", value = "x <- 10", label = structure("x &lt;- 10", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9d24760",     option = "xy <- 10", value = "xy <- 10", label = structure("xy &lt;- 10", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c40521",     option = "this_is_a_long_name <- 10", value = "this_is_a_long_name <- 10",     label = structure("this_is_a_long_name &lt;- 10", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1a3c5ed",     option = "3 == NA", value = "3 == NA", label = structure("3 == NA", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex2-3-answer", question = "ex2-3"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich of the following code will cause an error?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1587550924.26074, options = list()), class = c("learnr_radio", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ex3-1", question = structure("Which code can used to print your current working directory in R?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_54c4235",     option = "getwd()", value = "getwd()", label = structure("getwd()", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_470f1fb",     option = "setwd()", value = "setwd()", label = structure("setwd()", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4dfba8a",     option = "cd()", value = "cd()", label = structure("cd()", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex3-1-answer", question = "ex3-1"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich code can used to print your current working directory in R?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 44642735.9792116, options = list()), class = c("learnr_radio", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", label = "ex3-2", question = structure("Which is of the following is correct ", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_e8c6e49",     option = "Run botton", value = "Run botton", label = structure("Run botton", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9f81900",     option = "Cmd/Ctrl + Enter", value = "Cmd/Ctrl + Enter",     label = structure("Cmd/Ctrl + Enter", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex3-2-answer", question = "ex3-2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich is of the following is correct \n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1175312376.9527, options = list()), class = c("learnr_checkbox", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ex4", question = structure("Which of the following file will not in your project folder?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_83b9f10",     option = "diamonds.csv", value = "diamonds.csv", label = structure("diamonds.csv", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f4647ba",     option = "diamonds.pdf", value = "diamonds.pdf", label = structure("diamonds.pdf", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a25e5d0",     option = "diamonds.R", value = "diamonds.R", label = structure("diamonds.R", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_12eb66a",     option = "diamonds.RData", value = "diamonds.RData", label = structure("diamonds.RData", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ex4-answer", question = "ex4"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich of the following file will not in your project folder?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 1057162564.50772, options = list()), class = c("learnr_radio", "tutorial_question")))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-func1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-func1-code-editor`)), session)
-output$`tutorial-exercise-func1-output` <- renderUI({
-  `tutorial-exercise-func1-result`()
+`tutorial-exercise-subset1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-subset1-code-editor`)), session)
+output$`tutorial-exercise-subset1-output` <- renderUI({
+  `tutorial-exercise-subset1-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-func2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-func2-code-editor`)), session)
-output$`tutorial-exercise-func2-output` <- renderUI({
-  `tutorial-exercise-func2-result`()
+`tutorial-exercise-subset2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-subset2-code-editor`)), session)
+output$`tutorial-exercise-subset2-output` <- renderUI({
+  `tutorial-exercise-subset2-result`()
 })
 </script>
  <!--html_preserve-->
@@ -385,10 +274,9 @@ output$`tutorial-exercise-func2-output` <- renderUI({
 <!--/html_preserve-->
 <!--html_preserve-->
 <script type="application/shiny-prerendered" data-context="execution_dependencies">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]}},"value":[{"type":"character","attributes":{},"value":["backports","base","checkmate","compiler","crayon","datasets","digest","dplyr","dslabs","ellipsis","evaluate","fastmap","generics","glue","graphics","grDevices","htmltools","htmlwidgets","httpuv","jsonlite","knitr","later","learnr","lifecycle","magrittr","markdown","methods","mime","pillar","pkgconfig","promises","purrr","R6","Rcpp","rlang","rmarkdown","rprojroot","shiny","stats","stringi","stringr","tibble","tidyselect","tools","utils","vctrs","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.1.9","4.0.2","2.0.0","4.0.2","1.3.4","4.0.2","0.6.25","1.0.2","0.7.3","0.3.1","0.14","1.0.1","0.0.2","1.4.2","4.0.2","4.0.2","0.5.0","1.5.1","1.5.4","1.7.0","1.29","1.1.0.1","0.10.1","0.2.0","1.5","1.1","4.0.2","0.9","1.4.6","2.0.3","1.1.1","0.3.4","2.4.1","1.0.5","0.4.7","2.3","1.3-2","1.5.0","4.0.2","1.4.6","1.4.0","3.0.3","1.1.0","4.0.2","4.0.2","0.3.4","2.2.0","0.16","1.8-4","2.2.1"]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79]}},"value":[{"type":"character","attributes":{},"value":["assertthat","backports","base","blob","broom","cellranger","checkmate","cli","colorspace","compiler","crayon","datasets","DBI","dbplyr","digest","dplyr","dslabs","ellipsis","evaluate","fansi","fastmap","forcats","fs","generics","ggplot2","glue","graphics","grDevices","grid","gtable","haven","hms","htmltools","htmlwidgets","httpuv","httr","jsonlite","knitr","later","learnr","lifecycle","lubridate","magrittr","markdown","methods","mime","modelr","munsell","pillar","pkgconfig","promises","purrr","R6","Rcpp","readr","readxl","reprex","rlang","rmarkdown","rprojroot","rstudioapi","rvest","scales","shiny","stats","stringi","stringr","tibble","tidyr","tidyselect","tidyverse","tools","utils","vctrs","withr","xfun","xml2","xtable","yaml"]},{"type":"character","attributes":{},"value":["0.2.1","1.1.9","4.0.2","1.2.1","0.7.0","1.1.0","2.0.0","2.0.2","1.4-1","4.0.2","1.3.4","4.0.2","1.1.0","1.4.4","0.6.25","1.0.2","0.7.3","0.3.1","0.14","0.4.1","1.0.1","0.5.0","1.5.0","0.0.2","3.3.2","1.4.2","4.0.2","4.0.2","4.0.2","0.3.0","2.3.1","0.5.3","0.5.0","1.5.1","1.5.4","1.4.2","1.7.0","1.29","1.1.0.1","0.10.1","0.2.0","1.7.9","1.5","1.1","4.0.2","0.9","0.1.8","0.5.0","1.4.6","2.0.3","1.1.1","0.3.4","2.4.1","1.0.5","1.3.1","1.3.1","0.3.0","0.4.7","2.3","1.3-2","0.11","0.3.6","1.1.1","1.5.0","4.0.2","1.4.6","1.4.0","3.0.3","1.1.2","1.1.0","1.3.0","4.0.2","4.0.2","0.3.4","2.2.0","0.16","1.3.2","1.8-4","2.2.1"]}]}]}
 </script>
 <!--/html_preserve-->
-</div>
 </div>
 </div>
 
@@ -401,7 +289,7 @@ output$`tutorial-exercise-func2-output` <- renderUI({
 
 <!-- begin doc-metadata -->
 <div id="doc-metadata">
-<h2 class="title toc-ignore" style="display:none;">Lesson3</h2>
+<h2 class="title toc-ignore" style="display:none;">Lesson6</h2>
 </div>
 <!-- end doc-metadata -->
 

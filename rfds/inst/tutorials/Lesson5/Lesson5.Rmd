@@ -1,0 +1,167 @@
+---
+title: "Lesson5"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(dslabs)
+library(tidyverse)
+library(dplyr)
+data(mpg)
+data("us_contagious_diseases")
+```
+
+## Part 1: Variation
+
+### Exercise 
+
+#### We will using the "mpg" dataset to continue the exercise.
+
+```{r mpg, echo=TRUE}
+glimpse(mpg)
+```
+For the 11 variables,
+
+manufacturer: manufacturer name
+
+model: model name
+
+displ: engine displacement, in litres
+
+year: year of manufacture
+
+cyl: number of cylinders
+
+trans: type of transmission
+
+drv: the type of drive train, where f = front-wheel drive, r = rear wheel drive, 4 = 4wd
+
+cty: city miles per gallon
+
+hwy: highway miles per gallon
+
+fl: fuel type
+
+class: "type" of car
+
+#### 1. Visualizing categorical variable - manufacturer.
+
+Using a bar chart to present the distribution of manufacturer.
+
+```{r mpg1, exercise=TRUE}
+ggplot(  ) +
+  geom_bar(   )
+```
+
+```{r mpg1q, echo=FALSE}
+question("Which manufacturer has the highest count?",
+  answer("dodge", correct = TRUE),
+  answer("audi"),
+  answer("toyota"),
+  answer("volkswagen")
+  )
+```
+
+#### 2. Visualizing continuous variable -  highway miles per gallon (hwy)
+
+Using a bar chart to present the distribution of highway miles per gallon. You can try to play with different binwidth.
+
+```{r mpg2, exercise=TRUE}
+ggplot(  ) + 
+  geom_histogram(  )
+
+```
+
+#### 3. Visualizing unusual values - highway miles per gallon (hwy)
+
+Based on the previous histogram plot of hwy. We notice there're some unusual values. And those values are hwy > 40.
+Find out those values.
+
+```{r mpg3, exercise=T}
+mpg %>%
+  filter(   ) %>%
+  arrange(   )
+
+```
+
+## Part 2: Covariation
+
+#### 1. Categorical & continuous variable -  highway miles per gallon (hwy) vs number of cylinders(cyl)
+
+Identify the distribution of highway miles per gallon based on differenct number of cylinders.
+
+```{r mpg4, exercise=TRUE}
+ggplot(  , aes(x=  , color=  ))+
+  geom_freqpoly(  )
+```
+
+Using a *density* plot.
+
+```{r mpg5, exercise=TRUE}
+ggplot(  , aes(x=  , y=  ))+
+  geom_freqpoly(aes(color =    ))
+```
+
+Using a *boxplot*.
+
+```{r mpg6, exercise=TRUE}
+ggplot(  , aes(x=  , y=  ))+
+  
+```
+
+#### 2.Two Categorical variables
+
+We want figure out whether there's any relationship between the maufacturer and the model of the car.
+
+First, using geom_count():
+
+```{r mpg7, exercise=TRUE}
+ggplot(  )+
+  geom_count(  )
+```
+
+Then, try using geom_tile():
+
+```{r mpg8, exercise=TRUE}
+mpg %>%
+          %>%
+ggplot(  )+
+  geom_tile(  )
+```
+
+## Part3: Patterns and models
+
+Now, we will focusing on the dataset "us_contagious_diseases".
+We are curious about how will the contagious diseases case number change over the year in New York.
+Try to creat a plot show this pattern.
+
+```{r mpg9, exercise=TRUE}
+us_contagious_diseases %>%
+  
+```
+
+<div id="mpg9-hint">
+**Hint:** You may use geom_line(), cause the count is provided in the dataset.
+</div>
+
+```{r mpg9q, echo=FALSE}
+quiz( caption = "Test your result",
+question("Which type of contagious disease has a highest case numbers among 1930-1960 in New York?",
+  answer("Hepatitis A"),
+  answer("Measles", correct = TRUE),
+  answer("Mumps"),
+  answer("Pertussis"),
+  answer("Polio"),
+  answer("Rubella"),
+  answer("Smallpox")
+  ),
+question("Which of the pattern of the case number of Mumps throughout year in New York is correct?",
+  answer("Mumps cases increase over the year in New York."),
+  answer("Mumps cases decrease over the year in New York.", correct=T)
+         )
+)
+```
+

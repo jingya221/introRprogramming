@@ -7,6 +7,7 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
 ```
 
 
@@ -131,3 +132,48 @@ write_csv(diamonds, "diamonds.csv")
     answer("diamonds.RData", correct = T)
   )
 ```
+
+## Part 4:Extra
+
+### Example3 on slides
+
+```{r, echo=TRUE}
+library(dslabs)
+data(us_contagious_diseases)
+#create the function
+sumcases_year_state <- function(dataset, years, states){
+     dataset %>%
+       filter(year == years, state == states) %>%
+       summarize(type = n(), total = sum(count))
+}
+```
+
+### Practice
+
+#### Try to use the function created above. Suppose you want to know the total case number and number of disease kind in 1983 in New Jersey.
+
+```{r func1, exercise=T}
+sumcases_year_state( #insert your code here
+  )
+```
+
+### Create a function
+
+#### Suppose you want to create a function to find the State which has the highest cases of a specific disease in a specific year.
+
+#### Test for your function. Find the State has the highest cases of Hepatitis A in 1980.
+
+```{r func2, exercise=T} 
+mincaseState_year_disease <- function(dataset, years, diseases){
+  dataset %>%
+    #insert your code here
+}
+
+mincaseState_year_disease(us_contagious_diseases,  ,    )
+```
+<div id="func2-hint">
+**Hint:** use top_n(1, count) after filter()
+</div>
+
+#### Test for your function. Find the State has the highest cases of Hepatitis A in 1980. 
+#### The correct State should be California.

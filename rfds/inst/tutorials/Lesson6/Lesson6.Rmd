@@ -1,0 +1,117 @@
+---
+title: "Lesson6"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(dslabs)
+library(dplyr)
+library(tidyverse)
+```
+
+## Part 1
+
+### Creating tibbles
+
+```{r q1, echo = FALSE}
+question("Which is the correct way to coerce data frame iris to a tibble?",
+         answer("tibble(iris)"),
+         answer("as_tibble(iris)", correct = TRUE),
+         answer("tribble(iris)"),
+         incorrect = "Incorrect, you should use as_tibble() to coerce a data frame to a tibble."
+)
+```
+
+tb <- tibble(    
+  :) = "smile",     
+  2000 = "number"    
+)
+```{r q2, echo = FALSE}
+question("When you run the code above, will it cause an error?",
+         answer("Yes", correct = TRUE),
+         answer("No"),
+         incorrect = "Incorrect, for a tibble to have non-syntactic variable names, you need to surround them with backticks, `."
+)
+```
+
+Create a tibble with x from 1 to 10, y = 2*x, and z = (x+y)^2.
+```{r tibble1, exercise = TRUE}
+
+```
+
+```{r, echo = TRUE}
+# A tibble: 3 x 3
+#  a         b     c
+#  <chr> <dbl> <dbl>
+#  x         7   5.5
+#  y         8   9.7
+#  z         9  10.8
+```
+Write a code to create a tibble with above results.
+```{r tibble2, exercise = TRUE}
+```
+
+
+## Part 2
+
+### Printing
+```{r, eval = FALSE, echo = TRUE}
+nycflights13::flights %>% 
+  print(n = 10, width = Inf)
+```
+```{r q3, echo = FALSE}
+question("How many rows and columns will the above code print?",
+         answer("10 rows and 10 columns"),
+         answer("10 rows and all coloumns", correct = TRUE),
+         answer("all rows and 10 columns"),
+         answer("all rows and all columns"),
+         incorrect = "Incorrect, it will print 10 rows and all columns."
+)
+```
+
+```{r, eval = FALSE, echo = TRUE}
+options(tibble.print_max = n, tibble.print_min = m)
+```
+```{r q4, echo = FALSE}
+question("What will the above code do?",
+         answer("If more than n rows, print only m rows", correct = TRUE),
+         answer("If more than m rows, print only n rows"),
+         answer("If more than n columns, print only m columns"),
+         answer("If more than m columns, print only n columns"),
+         incorrect = "Incorrect, if more than n rows, it will print only m rows."
+)
+```
+
+Use *flights* for the following question.     
+Write a code to print 8 rows and all columns of *flights*.
+```{r print, exercise = TRUE}
+```
+
+
+## Part 3
+
+### Subsetting
+
+Use *us_contagious_disease* for the following question.     
+Write a code to extract *disease* from the dataset.
+```{r subset1, exercise = TRUE}
+```
+Write a code to extract the third variable in the dataset.
+```{r subset2, exercise = TRUE}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
