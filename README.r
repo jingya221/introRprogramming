@@ -24,3 +24,6 @@ learnr::run_tutorial("Lesson5", package = "rfds")
 
 ##lesson6
 learnr::run_tutorial("Lesson6", package = "rfds")
+
+##lesson7
+learnr::run_tutorial("Lesson7", package = "rfds")
